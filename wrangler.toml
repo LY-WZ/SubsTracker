@@ -24,3 +24,18 @@ crons = ["0 8 * * *"]
 # 环境变量（可选，也可以在 Cloudflare Dashboard 中设置）
 [vars]
 ENVIRONMENT = "production"
+
+[observability]
+enabled = false
+head_sampling_rate = 1
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+persist = true
+invocation_logs = true
+
+[observability.traces]
+enabled = true
+persist = true
+head_sampling_rate = 1
