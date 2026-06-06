@@ -42,3 +42,7 @@ invocation_logs = true
 enabled = true
 persist = true
 head_sampling_rate = 1
+
+[[kv_namespaces]]
+binding = "ENVIRONMENT"
+id = "qrc"
